@@ -40,4 +40,6 @@ jobs:
           heroku_app_name: "fs11"
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           healthcheck: "https://fs11.herokuapp.com/health"
-  
+          checkstring: "ok"
+          rollbackonhealthcheckfailed: true
+          
