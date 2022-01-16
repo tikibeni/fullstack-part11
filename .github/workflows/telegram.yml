@@ -10,23 +10,3 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-
-      - name: private message - success
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO_ME }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            New successful commit detected: ${{ github.event.commits[0].message }}
-            Repository: ${{ github.repository }}
-        if: success()
-
-      - name: private message - failure
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO_ME }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            New failured commit detected: ${{ github.event.commits[0].message }}
-            Repository: ${{ github.repository }}
-        if: failure()
