@@ -4,6 +4,10 @@ This repository is used for the CI/CD module of the Full stack open course
 
 Fork the repository to complete course exercises
 
+The final exercise [here](https://github.com/tikibeni/fullstack-part11-anecdotes).
+
+Other parts of the Full stack course [here](https://github.com/tikibeni/fullstack).
+
 ## Commands
 
 Start by running `npm install` inside the project folder
